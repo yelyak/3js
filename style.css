@@ -1,0 +1,94 @@
+/* style.css – Retro American / 种美式复古 Palette */
+:root {
+    --bg: #0F1114;
+    --card: #DCC9A9;
+    --red: #B83A2D;
+    --green: #4E6851;
+    --text: #E8E1D3;
+    --text-dark: #222222;
+  }
+  
+  body {
+    margin: 0;
+    padding: 40px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    color: var(--card);
+    margin: 0 0 20px 0;
+  }
+  
+  a {
+    color: var(--red);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s ease;
+  }
+  
+  a:hover {
+    color: var(--card);
+    border-bottom: 2px solid var(--red);
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    max-width: 960px;
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(220, 201, 169, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  }
+  
+  th {
+    background: var(--red);
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  td {
+    padding: 18px 20px;
+    border-bottom: 1px solid rgba(220, 201, 169, 0.2);
+  }
+  
+  tr:nth-child(even) {
+    background: rgba(78, 104, 81, 0.12);
+  }
+  
+  tr:hover {
+    background: rgba(184, 58, 45, 0.18);
+  }
+  
+  /* Optional highlighted row (green accent) */
+  tr.highlight,
+  .highlight {
+    background: var(--green);
+    color: #ffffff;
+  }
+  
+  .highlight a {
+    color: var(--card);
+  }
+  .highlight a:hover {
+    color: #ffffff;
+  }
+  
+  /* Container for centering content */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
